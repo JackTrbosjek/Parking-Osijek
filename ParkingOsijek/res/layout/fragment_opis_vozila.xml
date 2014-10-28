@@ -1,0 +1,68 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpisVozilaFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/opisVozilaEtNaziv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/opisVozilaHintNaziv"
+        android:inputType="textCapWords|textPersonName" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/opisVozilaEtRegistracija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/opisVozilaHintRegistracija"
+        android:inputType="textCapCharacters" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/opisVozilaBtnSpremi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/opisVozilaBtnSpremi" />
+
+        <Button
+            android:id="@+id/opisVozilaBtnObrisi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/obrisi" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/opisVozilaBtnOdustani"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/odustani" />
+
+        <ToggleButton
+            android:id="@+id/opisVozilaDefaultVoziloToggle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="Zadano Vozilo Off"
+            android:textOn="Zadano Vozilo On" />
+
+    </TableRow>
+
+</TableLayout>

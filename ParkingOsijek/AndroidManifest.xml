@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.jakov.parkingosijek"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name="hr.jakov.parkingosijek.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hr.jakov.parkingosijek.vozila.VozilaActivity"
+            android:label="@string/title_activity_vozila"
+            android:parentActivityName="hr.jakov.parkingosijek.ViewPagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hr.jakov.parkingosijek.ViewPagerActivity" />
+        </activity>
+
+        <service
+            android:name="hr.jakov.parkingosijek.ParkingService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="hr.jakov.parkingosijek.tools.NotificationActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_notification"
+            android:launchMode="singleTask"
+            android:parentActivityName="hr.jakov.parkingosijek.ViewPagerActivity"
+            android:taskAffinity="" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hr.jakov.parkingosijek.ViewPagerActivity" />
+        </activity>
+        <activity
+            android:name="hr.jakov.parkingosijek.PovijestActivity"
+            android:label="@string/title_activity_povjest"
+            android:parentActivityName="hr.jakov.parkingosijek.ViewPagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hr.jakov.parkingosijek.ViewPagerActivity" />
+        </activity>
+    </application>
+
+</manifest>

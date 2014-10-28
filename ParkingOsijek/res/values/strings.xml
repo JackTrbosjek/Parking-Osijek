@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Titles -->
+    <string name="app_name">Parking Osijek</string>
+    <string name="title_activity_view_pager">Parking Osijek</string>
+    <string name="title_activity_vozila">Uređivanje vozila</string>
+    <string name="title_activity_notification">Pregled</string>
+    <string name="title_activity_povjest">Povjest Parkinga</string>
+    <!-- postavke -->
+    <string name="action_povijest">Povijest Parkinga</string>
+    <string name="action_vozila">Vozila</string>
+    <string name="action_sinkronizacija">Učitavanje Zona</string>
+    <string name="action_obrisi_povjest">Obriši Povijest</string>
+    <!-- ParkingFragment -->
+    <string name="parkingOdabirVozila">Odaberite Vozilo&#8230;</string>
+    <string name="odabirVozila">Odabir Vozilo</string>
+    <string name="zona1">Zona 1 &#8211; 4kn</string>
+    <string name="zona2">Zona 2 &#8211; 3kn</string>
+    <string name="zona3">Zona 3 &#8211; 2kn</string>
+    <string name="urediVozila">Uredi Vozila&#8230;</string>
+    <string name="parkingPredlozenaZona">Predložena zona:\n</string>
+    <string name="parkingNajblizaZona">Najbliža zona:\n</string>
+    <string name="parkingUdaljenost">Udaljenost: </string>
+    <string name="parkingPogreskaGPSa">Pogreška GPSa: </string>
+    <string name="parkingNemaVozila">Nije uneseno vozilo.</string>
+    <!-- Vozila -->
+    <string name="dodajVozilo">Dodaj Vozilo</string>
+    <string name="opisVozilaHintRegistracija">Unesite Registraciju&#8230;</string>
+    <string name="opisVozilaHintNaziv">Unesite Naziv&#8230;</string>
+    <string name="opisVozilaBtnSpremi">Spremi</string>
+    <string name="odustani">Odustani</string>
+    <string name="zadanoVozilo">Zadano Vozilo</string>
+    <string name="obrisi">Obriši</string>
+    <string name="vozilaNotingSelected">Odaberite vozilo ili dodajte novo.</string>
+    <!-- Sinkronizacija -->
+    <string name="ucitavanje">Učitavanje zona&#8230;</string>
+
+    <!-- Service -->
+    <string name="serviceSendOK">SMS uspješno poslan za vozilo:</string>
+    <string name="serviceSendFail">Neuspješno poslan SMS!</string>
+    <!-- Notifikacija Activity -->
+    <string name="notifikacijaVrijeme">Vrijeme:\n</string>
+    <string name="notifikacijaVozilo">Vozilo:\n</string>
+    <string name="notifikacijaUgasiNotif">Ukloni Notifikaciju</string>
+    <string name="notifikacijaProduziParking">Produži Parking</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slobodna_mjesta_unesi">Unesi</string>
+    <string name="dialog_unos_slobodnih_mjesta_naslov">Unesite broj slobodnih mjesta</string>
+
+</resources>

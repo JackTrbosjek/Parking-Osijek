@@ -1,0 +1,95 @@
+#
+# generated on 2014/01/06 02:37:45
+#
+# --table-start--
+dataClass=hr.jakov.parkingosijek.baza.Vozilo
+tableName=vozilo
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=naziv
+unique=true
+# --field-end--
+# --field-start--
+fieldName=registracija
+unique=true
+# --field-end--
+# --field-start--
+fieldName=default_vozilo
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=hr.jakov.parkingosijek.baza.Koordinata
+tableName=koordinata
+# --table-fields-start--
+# --field-start--
+fieldName=id
+id=true
+# --field-end--
+# --field-start--
+fieldName=zona
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=lat
+# --field-end--
+# --field-start--
+fieldName=lon
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=hr.jakov.parkingosijek.baza.Zona
+tableName=zona
+# --table-fields-start--
+# --field-start--
+fieldName=id
+id=true
+# --field-end--
+# --field-start--
+fieldName=naziv
+unique=true
+# --field-end--
+# --field-start--
+fieldName=rank
+# --field-end--
+# --field-start--
+fieldName=koordinate
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=hr.jakov.parkingosijek.baza.Povjest
+tableName=povjest
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=vozilo
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=vrijeme_od
+# --field-end--
+# --field-start--
+fieldName=vrijeme_do
+# --field-end--
+# --field-start--
+fieldName=zona
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
